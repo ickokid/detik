@@ -21,6 +21,7 @@ Sample : C:\wamp64\bin\php\php7.2.33\php.exe -f "C:\wamp64\www\detik\cli\generat
 
 ## Usage API & Documentation
 1. Import Detik.postman_collection.json to Postman
+2. Run / Test API Function Check Ticket & Update Ticket
 
 API CHECK TICKET
 
