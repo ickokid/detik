@@ -12,7 +12,10 @@
 CLI
 
 ```
-php <PATH>detik\cli\\generate-ticket.php 2 500 
+<PATH_PHP> <PATH_CODE>detik/cli/generate-ticket.php 2 500 (LINUX) 
+<PATH_PHP> -f "<PATH_CODE>detik\cli\generate-ticket.php" 2 500 (WINDOWS)
+
+Sample : C:\wamp64\bin\php\php7.2.33\php.exe -f "C:\wamp64\www\detik\cli\generate-ticket.php" 2 500
 ```
 
 API CHECK TICKET
@@ -26,4 +29,19 @@ ticket_code
 RESPONSE :
 ticket_code
 status
+```
+
+API UPDATE TICKET
+
+```
+URL : <BASE_URL>detik\api\update-ticket.php
+METHOD : POST
+PARAMS :
+event_id
+ticket_code
+status
+RESPONSE :
+ticket_code
+status
+updated_at
 ```
