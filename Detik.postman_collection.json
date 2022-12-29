@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "3c85d7b1-320a-427e-a295-6714a36743d5",
+		"name": "Detik",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19058064"
+	},
+	"item": [
+		{
+			"name": "Check Ticket",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "7234743777217A25432A462D4A614E645267556B58703273357638782F413F44",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "partner",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Api-Key",
+						"value": "77217A25432A462D4A614E645267556B58703272357538782F413F4428472B4B",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "event_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "ticket_code",
+							"value": "DTKX0C0HFA",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/detik/api/check-ticket.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"detik",
+						"api",
+						"check-ticket.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Ticket",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "7234743777217A25432A462D4A614E645267556B58703273357638782F413F44",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "partner",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Api-Key",
+						"value": "77217A25432A462D4A614E645267556B58703272357538782F413F4428472B4B",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "event_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "ticket_code",
+							"value": "DTKK4X565B",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/detik/api/update-ticket.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"detik",
+						"api",
+						"update-ticket.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
